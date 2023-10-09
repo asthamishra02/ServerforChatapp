@@ -1,14 +1,14 @@
 // import {createServer } from "http";
 // import {Server} from "socket.io;"
 // import { v4 as uuidv4 } from "uuid";
-const  {createServer } = require("http");
+const  {createServer} = require("http");
 const {Server} = require("socket.io");
 const  { v4 : uuidv4 } = require("uuid");
 
 const httpServer = createServer();
 const io = new Server(httpServer,{
     cors:{
-        origin:"http://localhost:3      000",
+        origin:"http://localhost:3000",
         methods:["GET","POST"]
     
     }
